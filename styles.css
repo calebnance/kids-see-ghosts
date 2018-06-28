@@ -1,0 +1,21 @@
+html,
+body {
+  background-color: #000;
+}
+
+.kid-container {
+  margin: 0 auto;
+  width: 479px;
+}
+
+#kid {
+  background: url('images/kid.png') 0px 0px;
+  height: 797px;
+  width: 479px;
+}
+
+#ghost {
+  background: url('images/ghost-r.png') 0px 0px;
+  height: 58px;
+  width: 58px;
+}

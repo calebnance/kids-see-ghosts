@@ -14,6 +14,9 @@ function windowReady() {
 	function startAnimations() {
 		animate('kid', 489);
 		animate('ghost', 58);
+		animate('ghost1', 58);
+		animate('ghost2', 58);
+		animate('ghost3', 58);
 	}
 
 	function animate(elementId, widthStart) {

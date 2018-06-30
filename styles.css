@@ -6,7 +6,7 @@ body {
 @keyframes leftToRight {
   0% {
     left: 0;
-    top: 0
+    top: 0;
   }
 
   10% {
@@ -35,7 +35,7 @@ body {
   }
 
   100% {
-    left: 120%;
+    left: 105%;
   }
 }
 
@@ -47,10 +47,12 @@ body {
 #kid {
   background: url('images/kid.png') 0px 0px;
   height: 797px;
+  position: relative;
   width: 479px;
+  z-index: 10;
 }
 
-#ghost {
+.ghost {
   -webkit-animation: leftToRight 5s infinite;
   animation: leftToRight 5s infinite;
   background: url('images/ghost-r.png') 0px 0px;
@@ -59,4 +61,12 @@ body {
   left: 0;
   height: 58px;
   width: 58px;
+}
+
+.ghost.behind {
+  z-index: 5;
+}
+
+.ghost.infront {
+  z-index: 15;
 }

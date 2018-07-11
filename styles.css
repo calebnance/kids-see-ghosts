@@ -1,42 +1,7 @@
 html,
 body {
-  background-color: #000;
-}
-
-@keyframes leftToRight {
-  0% {
-    left: 0;
-    top: 0;
-  }
-
-  10% {
-    /* left: 50%; */
-    top: 20px;
-  }
-
-  20% {
-    /* left: 50%; */
-    top: 60px;
-  }
-
-  40% {
-    /* left: 50%; */
-    top: 30px;
-  }
-
-  60% {
-    /* left: 50%; */
-    top: 60px;
-  }
-
-  80% {
-    /* left: 50%; */
-    top: 10px;
-  }
-
-  100% {
-    left: 105%;
-  }
+  background-color: #999;
+  overflow-x: hidden;
 }
 
 .kid-container {
@@ -53,14 +18,42 @@ body {
 }
 
 .ghost {
-  -webkit-animation: leftToRight 5s infinite;
-  animation: leftToRight 5s infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   background: url('images/ghost-r.png') 0px 0px;
+  height: 58px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  height: 58px;
   width: 58px;
+}
+
+#ghost {
+  -webkit-animation-name: leftToRight;
+  animation-name: leftToRight;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+#ghost1 {
+  -webkit-animation-name: leftToRight1;
+  animation-name: leftToRight1;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+#ghost2 {
+  -webkit-animation-name: leftToRight2;
+  animation-name: leftToRight2;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+#ghost3 {
+  -webkit-animation-name: leftToRight3;
+  animation-name: leftToRight3;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
 }
 
 .ghost.behind {
@@ -69,4 +62,60 @@ body {
 
 .ghost.infront {
   z-index: 15;
+}
+
+@keyframes leftToRight {
+  0% {
+    left: -5%;
+    top: 0;
+  }
+
+  10% { top: 10vh; }
+  20% { top: 11vh; }
+  40% { top: 14vh; }
+  60% { top: 12vh; }
+  80% { top: 10vh; }
+  100% { left: 105%; }
+}
+
+@keyframes leftToRight1 {
+  0% {
+    left: -5%;
+    top: 0;
+  }
+
+  10% { top: 20vh; }
+  20% { top: 21vh; }
+  40% { top: 24vh; }
+  60% { top: 22vh; }
+  80% { top: 20vh; }
+  100% { left: 105%; }
+}
+
+@keyframes leftToRight2 {
+  0% {
+    left: -5%;
+    top: 0;
+  }
+
+  10% { top: 30vh; }
+  20% { top: 41vh; }
+  40% { top: 54vh; }
+  60% { top: 52vh; }
+  80% { top: 30vh; }
+  100% { left: 105%; }
+}
+
+@keyframes leftToRight3 {
+  0% {
+    left: -5%;
+    top: 0;
+  }
+
+  10% { top: 60vh; }
+  20% { top: 61vh; }
+  40% { top: 64vh; }
+  60% { top: 62vh; }
+  80% { top: 60vh; }
+  100% { left: 105%; }
 }

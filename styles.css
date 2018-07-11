@@ -67,7 +67,7 @@ body {
 @keyframes leftToRight {
   0% {
     left: -5%;
-    top: 0;
+    top: 10vh;
   }
 
   10% { top: 10vh; }
@@ -81,7 +81,7 @@ body {
 @keyframes leftToRight1 {
   0% {
     left: -5%;
-    top: 0;
+    top: 14vh;
   }
 
   10% { top: 20vh; }
@@ -95,7 +95,7 @@ body {
 @keyframes leftToRight2 {
   0% {
     left: -5%;
-    top: 0;
+    top: 50vh;
   }
 
   10% { top: 30vh; }
@@ -109,7 +109,7 @@ body {
 @keyframes leftToRight3 {
   0% {
     left: -5%;
-    top: 0;
+    top: 80vh;
   }
 
   10% { top: 60vh; }
